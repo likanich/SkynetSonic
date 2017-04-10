@@ -1,23 +1,17 @@
 import java.awt.AWTException;
-<<<<<<< HEAD
 import java.awt.Image;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.awt.image.*;
+import java.awt.Toolkit;
 import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-//import javax.swing.JFileChooser;
-
-
-
-//ghj
-=======
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
->>>>>>> origin/master
+
 import com.sun.jna.Native;
 import com.sun.jna.platform.win32.WinDef.HWND;
 import com.sun.jna.win32.StdCallLibrary;
@@ -63,6 +57,11 @@ public class Skynet_bot {
             	robot.keyRelease(KeyEvent.VK_K);
             	*/
             }
+            robot.keyPress(KeyEvent.VK_ALT);
+            robot.keyPress(KeyEvent.VK_PRINTSCREEN);
+            robot.delay(100);
+            robot.keyRelease(KeyEvent.VK_ALT);
+            robot.keyRelease(KeyEvent.VK_PRINTSCREEN);
 
         } catch (AWTException e) {
 
@@ -72,7 +71,7 @@ public class Skynet_bot {
         
         
         Window w1 = new  Window();
-    	w1.loadImage("2.jpg");
+    	w1.loadImage();
     	w1.drawIcon();
         
 	}

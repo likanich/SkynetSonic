@@ -15,5 +15,5 @@ public class Skynet_bot {
     	window.drawIcon();
         
 	}
-
+//Mikhail
 }

@@ -5,7 +5,7 @@ public class Skynet_bot {
 	
 	public static void main(String[] args) throws IOException, AWTException {
 		
-		Window window = new  Window();//Vasily !!!!!!!!!
+		Window window = new  Window();
         window.interception();
 		
         Bot bot = new Bot();
@@ -15,5 +15,5 @@ public class Skynet_bot {
     	window.drawIcon();
         
 	}
-//Mikhail
+
 }

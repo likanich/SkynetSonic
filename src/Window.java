@@ -65,7 +65,7 @@ public class Window extends JFrame {
 	    g.drawImage(img, 0, 0, width, height, null);
 	}
 	
-	public static BufferedImage getImageFromClipboard(){ //get image from clipboard
+	public  BufferedImage getImageFromClipboard(){ //get image from clipboard
 		Transferable transferable = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null);
 		if (transferable != null && transferable.isDataFlavorSupported(DataFlavor.imageFlavor)){
 		    try{
@@ -85,5 +85,7 @@ public class Window extends JFrame {
 		}
 		return null;
 	}
+	
+
 
 }
